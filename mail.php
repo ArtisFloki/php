@@ -25,3 +25,15 @@ mail($to, $subject, $message, $headers);
 
   </body>
 </html>
+
+
+<!-- HTML -->
+<form class="formulaire" action="mail.php" method="post">
+  <h3>Formulaire de contact</h3>
+  <input type="email" name="mailadress" placeholder="Votre adresse mail *" required/>
+  <input type="text" name="name" placeholder="Votre nom *" required/>
+  <input type="text" name="object" placeholder="Objet *" required/>
+  <textarea id="message" placeholder="Votre message *" type="text" name="message" required></textarea>
+  <button name="button" type="submit">Envoyer</button>
+  <p>Les champs suivis d'un * sont obligatoires</p>
+</form>
